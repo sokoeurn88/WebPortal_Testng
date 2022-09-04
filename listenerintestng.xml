@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UI TESTS">
+<listeners>
+	<listener class-name="commondatasetup.Listeners"/>
+</listeners>
+  <test name="Functional Testing">
+  
+    <groups>
+    <run>
+      <include name="regression"/>
+      <exclude name="bvt"/>
+    </run>
+  </groups>
+  
+  
+    <classes>
+      <class name="ui.GroupsTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
